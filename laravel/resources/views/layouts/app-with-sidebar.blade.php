@@ -190,7 +190,11 @@
 
                     @yield('content-header')
 
-                    <div class="content">
+                    <div id="page-loader" class="text-center">
+                        <i id="loading-spinner" class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+                    </div>
+
+                    <div id="page-content" class="content">
                         @yield('content')
                     </div>
                 </div>
